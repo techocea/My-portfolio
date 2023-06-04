@@ -64,13 +64,14 @@ header {
     font-size: 14px;
 }
 
-.intro {
+/* .intro {
     width: 100%;
-}
+} */
 
 #home {
     height: 530px;
     padding: 50px;
+    width: 100%;
 }
 
 #home h1 {
@@ -141,6 +142,7 @@ header {
 
 #about {
     height: 630px;
+    width: 100%;
     background-color: rgb(58, 43, 43);
     padding: 0 5rem;
 }
@@ -148,7 +150,7 @@ header {
 .about-container {
     height: 630px;
     background-color: black;
-    width: 98%;
+    
     color: #fff;
     position: relative;
 }
@@ -312,28 +314,26 @@ header {
     background-color: rgb(188,200,221);
 }
 
-#contact{
+footer{
     height: 200px;
+    width: 100%;
     background-color: #00709d;
     color: #fff;
-    align-items: center;
     text-align: center;
-    position: relative;
+    justify-content: center;
 }
 
 .info{
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    font-size: 1.2em;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: bold; 
+    padding: 6rem 0 0 4.5rem; 
 }
 
 #contact a{
     text-decoration: none;
     color: #fff;
 }
-@media screen and (max-width:412px) {
+@media screen and (max-width:576px) {
     header {
         padding: 1rem 2rem;
     }
@@ -350,12 +350,9 @@ header {
         letter-spacing: normal;
     }
 
-    .intro {
-        width: 100%;
-    }
-
     #home {
         height: 450px;
+        width: 100%;
         padding: 3rem 2rem 0 2rem;
         flex-wrap: wrap;
     }
@@ -464,5 +461,19 @@ header {
     }
     #mywork h1{
         font-size: 24px;
+    }
+    footer{
+        height: 200px;
+        width: 100%;
+        background-color: #00709d;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .info{
+        font-size: 16px;
+        font-weight: bold;  
+        padding: 3rem 0 0 3rem;
     }
 }
